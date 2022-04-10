@@ -6,7 +6,7 @@ struct FruitDetail: View {
     var body: some View {
         VStack {
             Text(fruit.emoji)
-                .font(.system(size: 180))
+                .font(Font.system(size: 180))
         }
         .navigationTitle(fruit.name)
     }
