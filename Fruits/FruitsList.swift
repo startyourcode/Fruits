@@ -8,8 +8,10 @@ struct FruitsList: View {
                     NavigationLink {
                         FruitDetail(fruit: fruit)
                     } label: {
-                        Text(fruit.name)
-                            .font(.headline)
+                        HStack {
+                            Text(fruit.emoji)
+                            Text(fruit.name)
+                        }
                     }
                 }                
             }

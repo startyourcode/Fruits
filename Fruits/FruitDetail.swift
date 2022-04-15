@@ -5,10 +5,13 @@ struct FruitDetail: View {
     
     var body: some View {
         VStack {
-            Text(fruit.emoji)
-                .font(Font.system(size: 180))
+            Image(fruit.name.lowercased())
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+            Text(fruit.discription)
+                .padding()
         }
-        .navigationTitle(fruit.name)
+        .navigationTitle(fruit.name.uppercased())
     }
 }
 
